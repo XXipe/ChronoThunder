@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &753951618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7636980850027526548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ea0cf3a0112a5b42b1b8f8cff78a1c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  speed: 8
+--- !u!1001 &2642446545620273405
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5573163568842305896, guid: 366d91d0e7d955a4db9be941786fa6a8, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573163568842305896, guid: 366d91d0e7d955a4db9be941786fa6a8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.6220255
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573163568842305896, guid: 366d91d0e7d955a4db9be941786fa6a8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573163568842305896, guid: 366d91d0e7d955a4db9be941786fa6a8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 19.50137
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573163568842305896, guid: 366d91d0e7d955a4db9be941786fa6a8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573163568842305896, guid: 366d91d0e7d955a4db9be941786fa6a8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573163568842305896, guid: 366d91d0e7d955a4db9be941786fa6a8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573163568842305896, guid: 366d91d0e7d955a4db9be941786fa6a8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573163568842305896, guid: 366d91d0e7d955a4db9be941786fa6a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573163568842305896, guid: 366d91d0e7d955a4db9be941786fa6a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573163568842305896, guid: 366d91d0e7d955a4db9be941786fa6a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573163568842305897, guid: 366d91d0e7d955a4db9be941786fa6a8, type: 3}
+      propertyPath: m_Name
+      value: Moving Platform (Fast, Left & Right) Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573163568842305897, guid: 366d91d0e7d955a4db9be941786fa6a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573163568842305903, guid: 366d91d0e7d955a4db9be941786fa6a8, type: 3}
+      propertyPath: Waypoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573163568842305903, guid: 366d91d0e7d955a4db9be941786fa6a8, type: 3}
+      propertyPath: Waypoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573163568842305906, guid: 366d91d0e7d955a4db9be941786fa6a8, type: 3}
+      propertyPath: m_Size.y
+      value: 0.08503801
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573163568842305906, guid: 366d91d0e7d955a4db9be941786fa6a8, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.058342904
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5573163568842305903, guid: 366d91d0e7d955a4db9be941786fa6a8, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 366d91d0e7d955a4db9be941786fa6a8, type: 3}
+--- !u!1 &7636980850027526548 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5573163568842305897, guid: 366d91d0e7d955a4db9be941786fa6a8, type: 3}
+  m_PrefabInstance: {fileID: 2642446545620273405}
+  m_PrefabAsset: {fileID: 0}
