@@ -19,21 +19,19 @@ public class Desacelerador : MonoBehaviour
     
     void Update()
     {
-        Ativar();
+        Cooldown();
+        //Ativar();
         Desativar();
         Timer();
     }
 
-    void Ativar()
+    public void Ativar()
     {
         if (Cooldown() != true)
         {
-            if (Input.GetKeyDown("z"))
-            {
-                DesaceleradorAtivado = true;
-                ItemTimer = 3f;
-                TimeStopEffect.Play();
-            }
+            DesaceleradorAtivado = true;
+            ItemTimer = 3f;
+            TimeStopEffect.Play();
         }
     }
 

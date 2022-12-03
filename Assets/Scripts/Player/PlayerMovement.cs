@@ -19,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private AudioSource JumpSoundEffect;
 
+    public Joystick joystick;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -29,15 +31,15 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        Jump();
+        //Jump();
         Horizontal();
 
         UpdateAnimationState();
     }
 
-    private void Jump()
+    public void Jump()
     {
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+        if (/*Input.GetButtonDown("Jump") &&*/ IsGrounded())
         {
             JumpSoundEffect.Play();
             GetComponent<Rigidbody2D>().velocity = new Vector2(rb.velocity.x, jumpForce);
@@ -46,9 +48,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void Horizontal()
     {
-        directionX = Input.GetAxisRaw("Horizontal");
+        directionX = joystick.Horizontal;
 
         rb.velocity = new Vector2(directionX * moveSpeed, rb.velocity.y);
+
+        if(joystick.Vertical < 0)
+        {
+            Debug.Log(joystick.Vertical);
+        }
     }
 
     private void UpdateAnimationState()

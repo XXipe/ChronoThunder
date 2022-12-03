@@ -12,6 +12,7 @@ public class ItemCollector : MonoBehaviour
     [SerializeField] private AudioSource CollectionSoundEffect;
 
     private Desacelerador DesaceleradorScript;
+    public GameObject DesaceleradorButton;
 
     private void Start()
     {
@@ -41,6 +42,7 @@ public class ItemCollector : MonoBehaviour
             CollectionSoundEffect.Play();
             Destroy(collision.gameObject);
             DesaceleradorScript.enabled = true;
+            DesaceleradorButton.SetActive(true);
         }
     }
 }

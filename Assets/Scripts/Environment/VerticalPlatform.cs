@@ -6,21 +6,23 @@ public class VerticalPlatform : MonoBehaviour
 {
     private PlatformEffector2D effector;
 
+    public GameObject player; 
     [SerializeField] private float waitTime, normalState;
 
     void Start()
     {
         effector = GetComponent<PlatformEffector2D>();
+
     }
 
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.DownArrow))
+        if (player.GetComponent<PlayerMovement>().joystick.Vertical > -0.35)
         {
             waitTime = 0.2f;
         }
 
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (player.GetComponent<PlayerMovement>().joystick.Vertical <= -0.35)
         {
             if (waitTime <= 0)
             {
